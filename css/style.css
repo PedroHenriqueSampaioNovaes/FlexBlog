@@ -63,7 +63,7 @@ a {
 }
 
 .local_info p, .local_info a, .local_info address {
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
 /* Menu */
@@ -246,7 +246,7 @@ a {
   display: block;
   width: 6px;
   height: 6px;
-  background: var(--bg-azul-claro);
+  background: #000;
   border-radius: 50%;
 }
 
@@ -331,7 +331,7 @@ a {
   font-style: italic;
   color: var(--cor-cinza);
   max-width: 240px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .newsletter-form {
@@ -373,7 +373,7 @@ footer {
 
 footer p {
   color: var(--bg-azul);
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 @media screen and (max-width: 800px) {
@@ -393,5 +393,9 @@ footer p {
 @media screen and (max-width: 400px) {
   .introducao {
     font-size: 2.6em;
+  }
+
+  .newsletter-form button {
+    font-size: 1.5em;
   }
 }
