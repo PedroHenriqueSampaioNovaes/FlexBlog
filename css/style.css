@@ -1,0 +1,397 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url(../font/Nunito-VariableFont_wght.ttf) format('truetype'), url(../font/Nunito-Italic-VariableFont_wght.ttf) format('truetype');
+}
+
+/* Variáveis */
+:root {
+  --bg-azul: #122ab2;
+  --bg-azul-claro: #2c70ff;
+  --bg-branco-cinza : #f7f7f7;
+  --cor-preto-fosco: #222;
+  --cor-cinza: #7c7c7c;
+  --cor-cinza-claro: #a4a4a4;
+  --cor-purple: #ae81ff;
+  --cor-pink: #f9265e;
+  --cor-blue: #66d9eb;
+}
+
+/* Estilos Gerais */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', Helvetica, Arial ,sans-serif;
+  color: var(--cor-preto-fosco);
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-weight: bold;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+}
+
+/* Localinfo */
+.local_info-bg {
+  background-color: var(--bg-azul);
+  color: #fff;
+  padding: 10px 0;
+}
+
+.local_info {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.local_info p, .local_info a, .local_info address {
+  margin: 0 10px;
+}
+
+/* Menu */
+.menu-bg {
+  background-color: var(--bg-azul-claro);
+}
+
+.menu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu_logo {
+  margin: 0 10px;
+  font-size: 2.25em;
+}
+
+.menu_nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu_nav li a {
+  display: block;
+  padding: 10px 10px;
+  font-size: 1.25em;
+}
+
+.menu_nav li a:hover {
+  color: #122ab2;
+}
+
+/* Introducao */
+.introducao {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+
+.introducao {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+/* Sobre */
+.sobre {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0;
+  border-top: 2px solid var(--bg-azul-claro);
+  border-bottom: 2px solid var(--bg-azul-claro);
+}
+
+.sobre-info {
+  flex: 2 1 300px;
+  margin: 0 10px;
+}
+
+.sobre-info h2 {
+  font-size: 3em;
+  padding-bottom: 0.5em;
+}
+
+.sobre-info p {
+  color: var(--cor-cinza);
+  font-size: 1.25em;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
+.sobre-img {
+  margin: 0 10px;
+  flex: 1 1 160px;
+}
+
+/* Produtos */
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.produtos h2 {
+  margin: 0 10px 60px 10px;
+  font-size: 3em;
+}
+
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.produtos-item {
+  margin: 10px;
+  flex: 1 1 175px;
+}
+
+.produtos-item h2 {
+  margin: 0;
+  padding: 60px 20px;
+  color: var(--cor-cinza-claro);
+  background-color: var(--bg-branco-cinza);
+}
+
+.purple {
+  border-top: 8px solid var(--cor-purple);
+}
+
+.pink {
+  border-top: 8px solid var(--cor-pink);
+}
+
+.blue {
+  border-top: 8px solid var(--cor-blue);
+}
+
+/* Preço */
+.preco {
+  padding: 60px;
+  background-color: var(--bg-branco-cinza);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.preco-item {
+  margin: 10px;
+  flex: 1 1 260px;
+  padding: 20px;
+  border: 4px solid #fff;
+}
+
+.preco-item h2 {
+  font-size: 3em;
+  color: var(--cor-cinza-claro);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.preco-item span {
+  display: block;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 10px 0 5px 0;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+}
+
+.preco-item sup {
+  font-size: 1.5rem;
+}
+
+.preco-item ul {
+  max-width: 300px;
+  margin: 20px auto;
+  color: var(--cor-cinza);
+  font-style: italic;
+  font-size: 1.25em;
+}
+
+.preco-item ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.preco-item ul li::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: var(--bg-azul-claro);
+  border-radius: 50%;
+}
+
+.preco-item a {
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.25em;
+  font-weight: bold;
+  border: 4px solid var(--cor-preto-fosco);
+  padding: 15px 0;
+}
+
+/* Qualidade */
+.qualidade {
+  max-width: 960px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.qualidade-item {
+  flex: 1 1 300px;
+  margin: 20px 10px;
+}
+
+.qualidade-item h2 {
+  color: var(--cor-cinza-claro);
+  font-size: 2.25em;
+  position: relative;
+}
+
+.qualidade-item h2::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 20px;
+  background: blue;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before {
+  background-color: var(--cor-purple);
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before {
+  background-color: var(--cor-pink);
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before {
+  background-color: var(--cor-blue);
+}
+
+.qualidade-item p {
+  margin-top: 20px;
+  font-size: 1.25em;
+  color: var(--cor-cinza-claro);
+}
+
+/* Newsletter */
+.newsletter {
+  padding: 60px calc((100% - 960px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-info {
+  flex: 1 1 260px;
+  margin: 0 10px;
+}
+
+.newsletter-info h2 {
+  font-size: 3em;
+  color: var(--cor-cinza-claro);
+}
+
+.newsletter-info p {
+  font-size: 1.25em;
+  font-style: italic;
+  color: var(--cor-cinza);
+  max-width: 240px;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  flex: 2 1 260px;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  margin: 0 10px;
+}
+
+.newsletter-form input {
+  flex: 3 1 200px;
+  font-size: 1.25em;
+  font-style: italic;
+  padding: 10px;
+  border: 4px solid var(--bg-azul-claro);
+  color: var(--cor-cinza);
+  outline: none;
+}
+
+.newsletter-form button {
+  flex: 1 1 200px;
+  font-size: 2.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--bg-azul-claro);
+  border: none;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+/* /FIM TESTE */
+
+footer {
+  background: var(--bg-azul-claro);
+  padding: 30px 10px;
+  text-align: center;
+}
+
+footer p {
+  color: var(--bg-azul);
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+  .preco {
+    padding: 40px 10px;
+  }
+
+  .preco-item:nth-child(3) {
+    order: -2;
+  }
+
+  .preco-item:nth-child(2) {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .introducao {
+    font-size: 2.6em;
+  }
+}
