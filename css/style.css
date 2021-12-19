@@ -10,6 +10,7 @@
   --bg-branco-cinza : #f7f7f7;
   --cor-preto-fosco: #222;
   --cor-cinza: #7c7c7c;
+  color: #929292;
   --cor-cinza-claro: #a4a4a4;
   --cor-purple: #ae81ff;
   --cor-pink: #f9265e;
@@ -135,7 +136,7 @@ a {
 }
 
 .sobre-info p {
-  color: var(--cor-cinza);
+  color: var(--cor-cinza-claro);
   font-size: 1.25em;
   line-height: 1.4em;
   margin-bottom: 20px;
@@ -171,7 +172,7 @@ a {
 .produtos-item h2 {
   margin: 0;
   padding: 60px 20px;
-  color: var(--cor-cinza-claro);
+  color: var(--cor-cinza);
   background-color: var(--bg-branco-cinza);
 }
 
@@ -190,7 +191,7 @@ a {
 /* Preço */
 .preco {
   padding: 60px;
-  background-color: var(--bg-branco-cinza);
+  /* background-color: #fff; */
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -200,12 +201,12 @@ a {
   margin: 10px;
   flex: 1 1 260px;
   padding: 20px;
-  border: 4px solid var(--bg-azul-claro);
+  border: 4px solid #fff
 }
 
 .preco-item h2 {
   font-size: 3em;
-  color: var(--cor-cinza-claro);
+  color: var(--cor-cinza);
   text-align: center;
   margin-top: 20px;
 }
@@ -218,8 +219,9 @@ a {
   text-align: center;
   font-size: 3em;
   font-weight: bold;
-  border-top: 4px solid var(--bg-azul-claro);
-  border-bottom: 4px solid var(--bg-azul-claro);
+  color: #000;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
 }
 
 .preco-item sup {
@@ -229,7 +231,7 @@ a {
 .preco-item ul {
   max-width: 300px;
   margin: 20px auto;
-  color: var(--cor-cinza);
+  color: var(--cor-cinza-claro);
   font-style: italic;
   font-size: 1.25em;
 }
@@ -246,7 +248,7 @@ a {
   display: block;
   width: 6px;
   height: 6px;
-  background: #000;
+  background: var(--bg-azul-claro);
   border-radius: 50%;
 }
 
@@ -254,12 +256,12 @@ a {
   max-width: 300px;
   margin: 20px auto;
   display: block;
-  color: var(--bg-azul-claro);
+  color: #0F0A0A;
   text-transform: uppercase;
   text-align: center;
   font-size: 2.25em;
   font-weight: bold;
-  border: 4px solid var(--bg-azul-claro);
+  border: 4px solid #0F0A0A;
   padding: 15px 0;
 }
 
@@ -363,7 +365,6 @@ a {
   padding: 15px 10px;
   cursor: pointer;
 }
-/* /FIM TESTE */
 
 footer {
   background: var(--bg-azul-claro);
