@@ -191,7 +191,7 @@ a {
 /* Preço */
 .preco {
   padding: 60px;
-  /* background-color: #fff; */
+  background-color: var(--bg-branco-cinza);
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
