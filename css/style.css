@@ -200,7 +200,7 @@ a {
   margin: 10px;
   flex: 1 1 260px;
   padding: 20px;
-  border: 4px solid #fff;
+  border: 4px solid var(--bg-azul-claro);
 }
 
 .preco-item h2 {
@@ -218,8 +218,8 @@ a {
   text-align: center;
   font-size: 3em;
   font-weight: bold;
-  border-top: 4px solid #fff;
-  border-bottom: 4px solid #fff;
+  border-top: 4px solid var(--bg-azul-claro);
+  border-bottom: 4px solid var(--bg-azul-claro);
 }
 
 .preco-item sup {
@@ -254,12 +254,12 @@ a {
   max-width: 300px;
   margin: 20px auto;
   display: block;
-  color: #000;
+  color: var(--bg-azul-claro);
   text-transform: uppercase;
   text-align: center;
   font-size: 2.25em;
   font-weight: bold;
-  border: 4px solid var(--cor-preto-fosco);
+  border: 4px solid var(--bg-azul-claro);
   padding: 15px 0;
 }
 
