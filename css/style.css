@@ -5,12 +5,11 @@
 
 /* Variáveis */
 :root {
-  --bg-azul: #122ab2;
+  --bg-azul: #0928d9;
   --bg-azul-claro: #2c70ff;
-  --bg-branco-cinza : #f7f7f7;
+  --bg-branco-cinza : #f4f4f4;
   --cor-preto-fosco: #222;
   --cor-cinza: #7c7c7c;
-  color: #929292;
   --cor-cinza-claro: #a4a4a4;
   --cor-purple: #ae81ff;
   --cor-pink: #f9265e;
@@ -201,7 +200,7 @@ a {
   margin: 10px;
   flex: 1 1 260px;
   padding: 20px;
-  border: 4px solid #fff
+  border: 4px solid var(--bg-branco-cinza);
 }
 
 .preco-item h2 {
